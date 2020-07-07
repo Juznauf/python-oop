@@ -5,7 +5,8 @@ As I aim to reach a certain level of mastery with Python, keyword is *try*, ther
 ### Progress
 
 - Finished Python namespace, scopes, generators (see `functions_and_generators.py` and `python_scopes.ipynb`)
-
+- Finished Python modules (see `python_modules.ipynb`)
+- Finished Python classes till chapter 31 on pseudo private classes (see `python_classes_and_oop.ipynb`, `class_coding_details.ipynb`, `designing_with_classes.ipynb`, `classtools.py`,`person.py`, `specialize.py`)
 
 ### Issues
 

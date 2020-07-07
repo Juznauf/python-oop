@@ -1,20 +1,19 @@
-class Person:
+from classtools import AttrDisplay                    # Use generic display tool
+class Person(AttrDisplay):
     def __init__(self, name, job=None, pay=0):
         self.name = name
         self.job = job
         self.pay = pay
+
     def lastName(self):
         return self.name.split()[-1]
+
     def giveRaise(self, percent):
         self.pay = int(self.pay * (1 + percent))
-    def __repr__(self):
-        return '[Person: %s, %s]' % (self.name, self.pay)
-
 
 class Manager(Person):
     def __init__(self, name, pay): # redefine the constructor
         Person.__init__(self, name, 'mgr', pay) # Run original with mgr
-
 
     def giveRaise(self, percent, bonus=.10):
         Person.giveRaise(self, percent + bonus)
